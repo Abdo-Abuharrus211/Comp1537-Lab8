@@ -10,15 +10,20 @@
     <!-- jQuery CD -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <!-- My JS Script -->
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="app.js"></script>
+
 </head>
 
 <body>
 
     <div class="inputs-box">
-        <input type="text" id="first-operand">
-        <input type="text" id="second-operand">
-
+        <label for="first-operand">First operand</label>
+        <input type="text" id="first-operand" value="2">
+        <br>
+        <label for="second-operand">Second operand</label>
+        <input type="text" id="second-operand" value="10">
+        <br>
         <button id="add">Add</button>
         <button id="sub">Subtract</button>
         <button id="multi">Mulitiply</button>
@@ -28,6 +33,10 @@
 
     <div class="outputs-box">
         <p id="result">Result is: </p>
+    </div>
+    <br>
+    <h1>History</h1>
+    <div class="history">
     </div>
 
 </body>
